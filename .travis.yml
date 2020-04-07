@@ -10,4 +10,4 @@ install:
 script:
  - dotnet restore
  - dotnet build
- - dotnet test FuturesCalc/FuturesCalc/FuturesCalc.csproj
+ - dotnet test FuturesCalc/FuturesCalc/FuturesCalc/FuturesCalc.csproj
