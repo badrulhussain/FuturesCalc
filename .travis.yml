@@ -6,7 +6,7 @@ before_install:
 
 
 install:
-- dotnet restore
+ - dotnet restore
 
 script:
  - dotnet build
