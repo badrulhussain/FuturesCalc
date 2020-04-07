@@ -1,0 +1,56 @@
+﻿@model FuturesCalc.Models.Order
+
+@{
+    ViewData["Title"] = "MicroEMiniResult";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>MicroEMiniResult</h1>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EntryPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EntryPrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ExitPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ExitPrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Contract)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Contract)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProfitAndLose)
+        </dt>
+        <dd class = "col-sm-10">
+            $ @Html.DisplayFor(model => model.ProfitAndLose) USD
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tick)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tick)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.point)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.point)
+        </dd>
+    </dl>
+</div>
+<a asp-controller="StandardAndPoors" asp-action="MicroEMini" class="btn btn-primary" >Edit Price</a>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
