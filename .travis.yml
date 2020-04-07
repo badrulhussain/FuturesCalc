@@ -6,8 +6,8 @@ before_install:
 
 
 install:
- - dotnet restore
 
 script:
+ - dotnet restore
  - dotnet build
- - dotnet run FuturesCalc/FuturesCalc/FuturesCalc.csproj
+ - dotnet test FuturesCalc/FuturesCalc/FuturesCalc.csproj
